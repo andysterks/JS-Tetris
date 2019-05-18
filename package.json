@@ -1,0 +1,22 @@
+{
+  "name": "js-tetris",
+  "version": "1.0.0",
+  "description": "",
+  "main": "js_tetris.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andysterks/JS-Tetris.git"
+  },
+  "author": "Andy Sterkowitz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andysterks/JS-Tetris/issues"
+  },
+  "homepage": "https://github.com/andysterks/JS-Tetris#readme",
+  "dependencies": {
+    "express": "^4.17.0"
+  }
+}
