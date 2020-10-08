@@ -4,6 +4,7 @@ const H = 528;
 const X = 0;
 const Y = 0;
 let ITER = 0;
+let paused = false;
 const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext("2d");
 ctx.fillStyle="#000000";
@@ -212,20 +213,45 @@ function storeKey(ev) {
 
     switch(arrows){
         case 32:
-            dropDownTetro();
-        case 37:
-            keyPresses.unshift(-24);
-            break;
-        case 38:
-            rotateTetro();
-            break;
-        case 39:
-            keyPresses.unshift(24);
-            break;
-        case 40:
-            tetro.position.y+=12;
-            break;
-            }
-        }
+            if (!paused) {
+                dropDownTetro();                
+            }  
+            break;   
 
-setInterval(updateGameState, 1000 / fps);    
+        case 37:
+            if (!paused) {
+                keyPresses.unshift(-24);
+            }            
+            break;
+
+        case 38:
+            if (!paused) {
+                rotateTetro();
+            }
+            break;
+
+        case 39:
+            if (!paused) {
+                keyPresses.unshift(24);
+            }
+            break;
+            
+        case 40:
+            if (!paused) {
+                tetro.position.y+=12;
+            }
+            break;
+
+        case 80:
+            if (paused){
+                paused = false;
+                game = setInterval(updateGameState, 1000 / fps); 
+            } else {
+                paused = true;
+                clearInterval(game);
+            }
+            break;
+    }
+}
+
+let game = setInterval(updateGameState, 1000 / fps);    
