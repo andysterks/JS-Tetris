@@ -20,7 +20,7 @@ const gameStatus = {
 }
 
 const keyPresses = [ 0 ];
-const storedFunctions = [];
+const storedFunctions = [ ];
 
 const tetro = {
     position: {x: (W-48)/2,y:0},
