@@ -20,4 +20,4 @@ It took me more than a month to work through building out all the functionality 
 
 ## Author
 
-* **Andy Sterkowitz** - *Full-Stack Software Developer* - [Website](https://andysterkowitz.com) | [LinkedIn](https://www.linkedin.com/in/andrewsterkowitz/)
+* **Andy Sterkowitz** - *Full Stack Software Developer* - [Website](https://andysterkowitz.com) | [LinkedIn](https://www.linkedin.com/in/andrewsterkowitz/)
