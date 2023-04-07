@@ -1,4 +1,4 @@
-# Vanilla Javascript Tetris App
+# Vanilla Javascript Tetris App!
 
 <br>
 
